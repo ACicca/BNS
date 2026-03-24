@@ -1,7 +1,7 @@
 const products = [
   {
     id: "bns-signature-01",
-    name: "BNS Signature Purse",
+    name: "Aretusa",
     price: 179,
     description:
       "Borsa artigianale in piccola serie, realizzata con finiture raffinate e silhouette versatile.",
