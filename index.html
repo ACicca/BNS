@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Borse di Nonna Santa | BNS</title>
+  <meta name="description" content="BNS - Le Borse di Nonna Santa. Borsa artigianale fatta a mano con materiali selezionati e design senza tempo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="BNS Home">
+      <span class="brand-mark">BNS</span>
+      <span class="brand-text">Le Borse di Nonna Santa</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigazione principale">
+      <a href="#storia">Storia</a>
+      <a href="#prodotto">Prodotto</a>
+      <a href="#dettagli">Dettagli</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="Apri carrello">
+      Carrello
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Hero BNS">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Nuova Collezione Artigianale</p>
+        <h1>Eleganza quotidiana, cucita a mano.</h1>
+        <p>
+          Ogni borsa BNS nasce con cura, materiali selezionati e il gusto autentico della tradizione italiana.
+        </p>
+        <div class="hero-cta">
+          <a href="#prodotto" class="btn btn-primary">Acquista Ora</a>
+          <a href="#storia" class="btn btn-ghost">Scopri il Brand</a>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <img src="img/lifestyle_08.png" alt="Borsa BNS in contesto lifestyle" id="heroImage" />
+      </div>
+    </section>
+
+    <section class="story" id="storia">
+      <div class="story-card reveal">
+        <p class="eyebrow">Le Borse di Nonna Santa</p>
+        <h2>Un pezzo unico pensato per durare nel tempo</h2>
+        <p>
+          BNS celebra il valore del fatto a mano: linee essenziali, dettagli curati e una personalita discreta ma inconfondibile.
+          Una borsa, tante occasioni: lavoro, viaggio, tempo libero.
+        </p>
+      </div>
+      <div class="story-gallery">
+        <div class="gallery-track reveal" id="galleryTrack">
+          <img src="img/lifestyle_v2_06.png" alt="Borsa BNS in posa lifestyle" class="gallery-item active" />
+        </div>
+      </div>
+    </section>
+
+    <section class="lookbook reveal" aria-label="Lookbook BNS">
+      <div class="lookbook-head">
+        <p class="eyebrow">Lookbook</p>
+        <h3>Stile BNS, dal giorno alla sera</h3>
+      </div>
+      <div class="lookbook-grid">
+        <figure class="lookbook-card lookbook-tall">
+          <img src="img/lifestyle_v2_08.png" alt="Borsa BNS in stile urbano quotidiano" />
+          <figcaption>Daily elegance</figcaption>
+        </figure>
+        <figure class="lookbook-card">
+          <img src="img/lifestyle_10.png" alt="Borsa BNS in outfit casual chic" />
+          <figcaption>Soft silhouette</figcaption>
+        </figure>
+        <figure class="lookbook-card">
+          <img src="img/lifestyle_v2_04.png" alt="Borsa BNS in ambientazione raffinata" />
+          <figcaption>Evening ready</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="product" id="prodotto">
+      <div class="product-visual reveal">
+        <div class="product-main">
+          <img id="mainProductImage" src="img/closeup_01.png" alt="Dettaglio borsa BNS" />
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+      <div class="product-info reveal">
+        <p class="eyebrow">Edizione Iniziale</p>
+        <h2 id="productName">BNS Signature Purse</h2>
+        <p class="price" id="productPrice">&euro;179,00</p>
+        <p class="product-description" id="productDescription">
+          Borsa artigianale in piccola serie, realizzata con finiture raffinate e silhouette versatile.
+        </p>
+
+        <div class="selectors">
+          <label for="color">Colore (2 disponibili)</label>
+          <select id="color"></select>
+
+          <label for="qty">Quantita</label>
+          <div class="qty-wrap">
+            <button type="button" id="qtyDown" aria-label="Riduci quantita">-</button>
+            <input id="qty" type="number" min="1" value="1" aria-label="Quantita" />
+            <button type="button" id="qtyUp" aria-label="Aumenta quantita">+</button>
+          </div>
+        </div>
+
+        <div class="product-actions">
+          <button class="btn btn-primary" id="addToCart">Aggiungi al Carrello</button>
+          <button class="btn btn-ghost" id="quickBuy">Acquista Subito</button>
+        </div>
+
+        <ul class="highlights" id="dettagli">
+          <li>Realizzata a mano in Italia</li>
+          <li>Consegna gratuita in Italia sopra &euro;120</li>
+          <li>Reso entro 14 giorni</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="details reveal">
+      <h3>Dettagli del prodotto</h3>
+      <div class="detail-grid">
+        <article>
+          <h4>Materiali</h4>
+          <p>Esterno premium e finiture resistenti all'uso quotidiano, scelti per durata e comfort.</p>
+        </article>
+        <article>
+          <h4>Capienza</h4>
+          <p>Spazio ideale per essentials quotidiani: portafoglio, smartphone, chiavi, make-up e piccoli accessori.</p>
+        </article>
+        <article>
+          <h4>Cura</h4>
+          <p>Pulire con panno morbido asciutto. Conservare in luogo fresco e asciutto, lontano da luce diretta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="future reveal">
+      <p class="eyebrow">In Arrivo</p>
+      <h3>Nuove creazioni BNS presto online</h3>
+      <p>
+        Questo shop e gia pronto per ospitare i prossimi modelli. La struttura prodotto e scalabile per nuove collezioni,
+        varianti e disponibilita.
+      </p>
+    </section>
+
+    <section class="faq reveal" id="faq">
+      <h3>Domande frequenti</h3>
+      <details>
+        <summary>Quanto tempo richiede la consegna?</summary>
+        <p>Generalmente 2-5 giorni lavorativi in Italia.</p>
+      </details>
+      <details>
+        <summary>Posso effettuare un reso?</summary>
+        <p>Si, entro 14 giorni dalla consegna, in condizioni originali.</p>
+      </details>
+      <details>
+        <summary>La borsa e prodotta in serie?</summary>
+        <p>No, la produzione e limitata e artigianale, con attenzione al dettaglio.</p>
+      </details>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrello">
+    <div class="cart-head">
+      <h3>Il tuo Carrello</h3>
+      <button id="closeCart" aria-label="Chiudi carrello">x</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary">
+      <p>Subtotale: <strong id="cartSubtotal">&euro;0,00</strong></p>
+      <p class="muted">Spedizione calcolata al checkout</p>
+      <button class="btn btn-primary" id="checkoutBtn">Procedi al Checkout</button>
+    </div>
+  </aside>
+
+  <div class="backdrop" id="backdrop"></div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Le Borse di Nonna Santa (BNS). Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
