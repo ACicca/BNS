@@ -606,6 +606,99 @@ input {
   .hero {
     margin-top: 8px;
   }
+
+  .hero-media img,
+  .product-main img {
+    height: clamp(300px, 58vw, 520px);
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    width: min(1160px, 94vw);
+    margin: 16px auto 56px;
+  }
+
+  section {
+    margin-bottom: 34px;
+  }
+
+  .topbar {
+    gap: 10px;
+    padding: 10px 3.8vw;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+  }
+
+  .cart-btn {
+    padding: 9px 12px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    gap: 18px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .story-card,
+  .lookbook,
+  .product-info,
+  .details,
+  .future,
+  .faq {
+    padding: 20px;
+  }
+
+  .gallery-item {
+    height: clamp(240px, 56vw, 360px);
+  }
+
+  .lookbook-card img {
+    height: 250px;
+  }
+
+  .thumbs {
+    flex-wrap: wrap;
+  }
+
+  .thumb {
+    width: 72px;
+    height: 72px;
+  }
+
+  select,
+  input,
+  .btn {
+    min-height: 44px;
+  }
+
+  .qty-wrap {
+    grid-template-columns: 44px 1fr 44px;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+  .product-actions .btn,
+  .cart-summary .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cart-drawer {
+    width: 100vw;
+    max-width: 100vw;
+  }
 }
 
 @media (max-width: 600px) {
@@ -617,12 +710,64 @@ input {
     display: none;
   }
 
-  .hero-cta {
-    flex-direction: column;
-    align-items: stretch;
+  .hero-content h1 {
+    font-size: clamp(1.95rem, 8vw, 2.5rem);
   }
 
-  .product-actions {
-    flex-direction: column;
+  .eyebrow {
+    letter-spacing: 0.13em;
+  }
+
+  .hero-media img,
+  .product-main img {
+    height: clamp(250px, 72vw, 340px);
+  }
+
+  .detail-grid article {
+    padding: 14px;
+  }
+
+  .site-footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 95vw;
+  }
+
+  .topbar {
+    padding-inline: 3vw;
+  }
+
+  .cart-btn {
+    padding: 8px 10px;
+    font-size: 0.82rem;
+  }
+
+  .cart-count {
+    width: 20px;
+    height: 20px;
+    font-size: 0.72rem;
+  }
+
+  .story-card,
+  .lookbook,
+  .product-info,
+  .details,
+  .future,
+  .faq {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding-inline: 16px;
+  }
+
+  .qty-wrap {
+    gap: 6px;
   }
 }
